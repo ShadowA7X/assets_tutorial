@@ -1,0 +1,128 @@
+slice_name: Supermarket_BarChart
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: purchase_date
+  annotation_layers: []
+  color_scheme: supersetColors
+  comparison_type: values
+  dashboards:
+  - 8
+  datasource: 22__table
+  extra_form_data: {}
+  forecastInterval: 0.8
+  forecastPeriods: 10
+  groupby:
+  - shipment_status
+  legendOrientation: top
+  legendType: scroll
+  metrics:
+  - aggregate: SUM
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: sales_amount
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 748
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: column
+      type_generic: 0
+      uuid: 69be4bd1-4d22-4e83-b8b8-9549553ff4a5
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: SUM(sales_amount)
+    optionName: metric_yld3y1zx84o_co3c9j8gnw7
+    sqlExpression: null
+  only_total: true
+  order_desc: true
+  orientation: vertical
+  rich_tooltip: true
+  row_limit: 10000
+  showTooltipTotal: true
+  show_empty_columns: true
+  show_legend: true
+  sort_series_type: sum
+  time_grain_sqla: P1D
+  time_shift_color: true
+  tooltipTimeFormat: smart_date
+  truncateXAxis: true
+  truncate_metric: true
+  viz_type: echarts_timeseries_bar
+  x_axis: purchase_date
+  x_axis_sort: name
+  x_axis_sort_asc: true
+  x_axis_time_format: smart_date
+  x_axis_title_margin: 15
+  y_axis_bounds:
+  - null
+  - null
+  y_axis_format: SMART_NUMBER
+  y_axis_title_margin: 30
+  y_axis_title_position: Left
+query_context: '{"datasource": {"id": 22, "type": "table"}, "force": false, "queries":
+  [{"filters": [{"col": "purchase_date", "op": "TEMPORAL_RANGE", "val": "No filter"}],
+  "extras": {"time_grain_sqla": "P1D", "having": "", "where": ""}, "applied_time_extras":
+  {}, "columns": [{"timeGrain": "P1D", "columnType": "BASE_AXIS", "sqlExpression":
+  "purchase_date", "label": "purchase_date", "expressionType": "SQL"}, "shipment_status"],
+  "metrics": [{"expressionType": "SIMPLE", "column": {"advanced_data_type": null,
+  "certification_details": null, "certified_by": null, "column_name": "sales_amount",
+  "description": null, "expression": null, "filterable": true, "groupby": true, "id":
+  748, "is_certified": false, "is_dttm": false, "python_date_format": null, "type":
+  "column", "type_generic": 0, "uuid": "69be4bd1-4d22-4e83-b8b8-9549553ff4a5", "verbose_name":
+  null, "warning_markdown": null}, "aggregate": "SUM", "sqlExpression": null, "datasourceWarning":
+  false, "hasCustomLabel": false, "label": "SUM(sales_amount)", "optionName": "metric_yld3y1zx84o_co3c9j8gnw7"}],
+  "orderby": [[{"expressionType": "SIMPLE", "column": {"advanced_data_type": null,
+  "certification_details": null, "certified_by": null, "column_name": "sales_amount",
+  "description": null, "expression": null, "filterable": true, "groupby": true, "id":
+  748, "is_certified": false, "is_dttm": false, "python_date_format": null, "type":
+  "column", "type_generic": 0, "uuid": "69be4bd1-4d22-4e83-b8b8-9549553ff4a5", "verbose_name":
+  null, "warning_markdown": null}, "aggregate": "SUM", "sqlExpression": null, "datasourceWarning":
+  false, "hasCustomLabel": false, "label": "SUM(sales_amount)", "optionName": "metric_yld3y1zx84o_co3c9j8gnw7"},
+  false]], "annotation_layers": [], "row_limit": 10000, "series_columns": ["shipment_status"],
+  "series_limit": 0, "order_desc": true, "url_params": {}, "custom_params": {}, "custom_form_data":
+  {}, "time_offsets": [], "post_processing": [{"operation": "pivot", "options": {"index":
+  ["purchase_date"], "columns": ["shipment_status"], "aggregates": {"SUM(sales_amount)":
+  {"operator": "mean"}}, "drop_missing_columns": false}}, {"operation": "rename",
+  "options": {"columns": {"SUM(sales_amount)": null}, "level": 0, "inplace": true}},
+  {"operation": "flatten"}]}], "form_data": {"datasource": "22__table", "viz_type":
+  "echarts_timeseries_bar", "x_axis": "purchase_date", "time_grain_sqla": "P1D", "x_axis_sort_asc":
+  true, "x_axis_sort_series": "name", "x_axis_sort_series_ascending": true, "metrics":
+  [{"expressionType": "SIMPLE", "column": {"advanced_data_type": null, "certification_details":
+  null, "certified_by": null, "column_name": "sales_amount", "description": null,
+  "expression": null, "filterable": true, "groupby": true, "id": 748, "is_certified":
+  false, "is_dttm": false, "python_date_format": null, "type": "column", "type_generic":
+  0, "uuid": "69be4bd1-4d22-4e83-b8b8-9549553ff4a5", "verbose_name": null, "warning_markdown":
+  null}, "aggregate": "SUM", "sqlExpression": null, "datasourceWarning": false, "hasCustomLabel":
+  false, "label": "SUM(sales_amount)", "optionName": "metric_yld3y1zx84o_co3c9j8gnw7"}],
+  "groupby": ["shipment_status"], "adhoc_filters": [{"clause": "WHERE", "subject":
+  "purchase_date", "operator": "TEMPORAL_RANGE", "comparator": "No filter", "expressionType":
+  "SIMPLE"}], "order_desc": true, "row_limit": 10000, "truncate_metric": true, "show_empty_columns":
+  true, "comparison_type": "values", "annotation_layers": [], "forecastPeriods": 10,
+  "forecastInterval": 0.8, "orientation": "vertical", "x_axis_title_margin": 15, "y_axis_title_margin":
+  30, "y_axis_title_position": "Left", "sort_series_type": "sum", "color_scheme":
+  "supersetColors", "time_shift_color": true, "only_total": true, "show_legend": true,
+  "legendType": "scroll", "legendOrientation": "top", "x_axis_time_format": "smart_date",
+  "y_axis_format": "SMART_NUMBER", "y_axis_bounds": [null, null], "truncateXAxis":
+  true, "rich_tooltip": true, "showTooltipTotal": true, "tooltipTimeFormat": "smart_date",
+  "extra_form_data": {}, "dashboards": [8], "force": false, "result_format": "json",
+  "result_type": "full"}, "result_format": "json", "result_type": "full"}'
+cache_timeout: null
+uuid: 428a993a-365a-495a-8319-f701852a9be9
+version: 1.0.0
+dataset_uuid: 97c2a39b-0ae0-4ab0-90eb-063a23d653bb

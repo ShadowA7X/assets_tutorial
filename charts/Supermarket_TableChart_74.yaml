@@ -1,0 +1,80 @@
+slice_name: Supermarket_TableChart
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 22__table
+  viz_type: table
+  slice_id: 74
+  query_mode: raw
+  groupby: []
+  temporal_columns_lookup:
+    purchase_date: true
+    transaction_timestamp: true
+    manufacture_date: true
+    expiration_date: true
+  all_columns:
+  - purchase_date
+  - transaction_timestamp
+  - manufacture_date
+  - expiration_date
+  - transaction_id
+  - customer_id
+  - product_id
+  - product_name
+  - product_category
+  - store_id
+  - store_location
+  - payment_method
+  - sales_amount
+  - discount_applied
+  - quantity_sold
+  - inventory_level
+  - promotion_code
+  - shipment_status
+  - expiration
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: purchase_date
+  order_by_cols: []
+  row_limit: 1000
+  table_timestamp_format: smart_date
+  allow_render_html: true
+  show_cell_bars: true
+  color_pn: true
+  comparison_color_scheme: Green
+  extra_form_data: {}
+  dashboards:
+  - 8
+query_context: '{"datasource": {"id": 22, "type": "table"}, "force": false, "queries":
+  [{"filters": [{"col": "purchase_date", "op": "TEMPORAL_RANGE", "val": "No filter"}],
+  "extras": {"having": "", "where": ""}, "applied_time_extras": {}, "columns": ["purchase_date",
+  "transaction_timestamp", "manufacture_date", "expiration_date", "transaction_id",
+  "customer_id", "product_id", "product_name", "product_category", "store_id", "store_location",
+  "payment_method", "sales_amount", "discount_applied", "quantity_sold", "inventory_level",
+  "promotion_code", "shipment_status", "expiration"], "orderby": [], "annotation_layers":
+  [], "row_limit": 1000, "series_limit": 0, "order_desc": true, "url_params": {},
+  "custom_params": {}, "custom_form_data": {}, "post_processing": [], "time_offsets":
+  []}], "form_data": {"datasource": "22__table", "viz_type": "table", "slice_id":
+  74, "query_mode": "raw", "groupby": [], "temporal_columns_lookup": {"purchase_date":
+  true, "transaction_timestamp": true, "manufacture_date": true, "expiration_date":
+  true}, "all_columns": ["purchase_date", "transaction_timestamp", "manufacture_date",
+  "expiration_date", "transaction_id", "customer_id", "product_id", "product_name",
+  "product_category", "store_id", "store_location", "payment_method", "sales_amount",
+  "discount_applied", "quantity_sold", "inventory_level", "promotion_code", "shipment_status",
+  "expiration"], "percent_metrics": [], "adhoc_filters": [{"clause": "WHERE", "comparator":
+  "No filter", "expressionType": "SIMPLE", "operator": "TEMPORAL_RANGE", "subject":
+  "purchase_date"}], "order_by_cols": [], "row_limit": 1000, "table_timestamp_format":
+  "smart_date", "allow_render_html": true, "show_cell_bars": true, "color_pn": true,
+  "comparison_color_scheme": "Green", "extra_form_data": {}, "dashboards": [8], "force":
+  false, "result_format": "json", "result_type": "full", "include_time": false}, "result_format":
+  "json", "result_type": "full"}'
+cache_timeout: null
+uuid: 55ce5e4b-3ebb-4bd9-bf8b-ae30ac5c55d5
+version: 1.0.0
+dataset_uuid: 97c2a39b-0ae0-4ab0-90eb-063a23d653bb

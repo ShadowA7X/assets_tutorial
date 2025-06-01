@@ -1,0 +1,88 @@
+dashboard_title: Dog_Dash
+description: null
+css: null
+slug: null
+certified_by: null
+certification_details: null
+published: false
+uuid: d1d02eec-b35e-4456-8fff-7be567696ea8
+metadata:
+  color_scheme_domain: []
+  shared_label_colors: []
+  map_label_colors: {}
+  label_colors: {}
+position:
+  DASHBOARD_VERSION_KEY: v2
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  GRID_ID:
+    children:
+    - ROW-N-YCFBCYVA
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Dog_Dash
+    type: HEADER
+  ROW-N-YCFBCYVA:
+    children:
+    - CHART-1XLJK0QE
+    - CHART-MWRWJYTY
+    - CHART-MO5D9K5Q
+    id: ROW-N-YCFBCYVA
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    type: ROW
+    parents:
+    - ROOT_ID
+    - GRID_ID
+  CHART-1XLJK0QE:
+    children: []
+    id: CHART-1XLJK0QE
+    meta:
+      chartId: 79
+      height: 50
+      sliceName: Dogs_BigNumber
+      uuid: 5903944c-c5b0-41d3-8a50-90e89d2d1ded
+      width: 4
+    type: CHART
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-YCFBCYVA
+  CHART-MWRWJYTY:
+    children: []
+    id: CHART-MWRWJYTY
+    meta:
+      chartId: 77
+      height: 50
+      sliceName: Dog_TableChart
+      uuid: 5f9f30e4-e55c-4fad-88e8-7f027a3009c9
+      width: 4
+    type: CHART
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-YCFBCYVA
+  CHART-MO5D9K5Q:
+    children: []
+    id: CHART-MO5D9K5Q
+    meta:
+      chartId: 78
+      height: 50
+      sliceName: Dog_PieChart
+      uuid: 5d301935-467e-40ae-9f15-64b1eede7a15
+      width: 4
+    type: CHART
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-YCFBCYVA
+version: 1.0.0
