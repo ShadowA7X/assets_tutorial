@@ -1,5 +1,5 @@
 database_name: PostgreSQL_Aiven_Jason
-sqlalchemy_uri: postgresql+psycopg2://avnadmin:XXXXXXXXXX@pg-210add6a-preset-90e7.h.aivencloud.com:16165/pagila?sslmode=require
+sqlalchemy_uri: postgresql+psycopg2://avnadmin:AVNS_ZWM6atm1RxMEYiwqWMW@pg-210add6a-preset-90e7.h.aivencloud.com:16165/pagila?sslmode=require
 cache_timeout: null
 expose_in_sqllab: true
 allow_run_async: false
