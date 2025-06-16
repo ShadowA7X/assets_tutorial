@@ -1,0 +1,14 @@
+database_name: PostgreSQL_Aiven_Jason
+sqlalchemy_uri: postgresql+psycopg2://avnadmin:XXXXXXXXXX@pg-210add6a-preset-90e7.h.aivencloud.com:16165/pagila?sslmode=require
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: true
+allow_file_upload: false
+extra:
+  allows_virtual_table_explore: true
+impersonate_user: false
+uuid: 6e4dcf90-2193-430f-9414-e5e2b6f1198f
+version: 1.0.0
