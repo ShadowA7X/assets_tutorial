@@ -20,6 +20,11 @@ jobs:
       - name: Install Preset CLI
         run: pip install preset-cli
 
+      - name: Replace password placeholders
+        run: bash ./scripts/replace-passwords.sh
+        env:
+          POSTGRES_A_PASSWORD: ${{ secrets.POSTGRES_A_PASSWORD }}
+
       - name: Sync Assets to Preset (Production)
         run: |
           preset-cli \
@@ -28,4 +33,5 @@ jobs:
             --workspaces=https://303c4778.eu5a.app.preset.io/ \
             superset sync native . \
             --overwrite \
-            --disallow-edits
+            --disallow-edits \
+            --load-env
