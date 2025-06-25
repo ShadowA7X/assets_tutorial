@@ -20,7 +20,7 @@ position:
     type: ROOT
   GRID_ID:
     children:
-    - ROW-N-ZECCZRMV
+    - ROW-N-60QUU8VT
     id: GRID_ID
     parents:
     - ROOT_ID
@@ -30,12 +30,12 @@ position:
     meta:
       text: Dog_Dash
     type: HEADER
-  ROW-N-ZECCZRMV:
+  ROW-N-60QUU8VT:
     children:
-    - CHART-HZ9BEQNP
-    - CHART-BLYLIVYA
-    - CHART-I188VH0O
-    id: ROW-N-ZECCZRMV
+    - CHART-FH46C3F6
+    - CHART-YHT6GJ90
+    - CHART-P8V7PMCQ
+    id: ROW-N-60QUU8VT
     meta:
       '0': ROOT_ID
       background: BACKGROUND_TRANSPARENT
@@ -43,23 +43,9 @@ position:
     parents:
     - ROOT_ID
     - GRID_ID
-  CHART-HZ9BEQNP:
+  CHART-FH46C3F6:
     children: []
-    id: CHART-HZ9BEQNP
-    meta:
-      chartId: 79
-      height: 50
-      sliceName: Dogs_BigNumber
-      uuid: 5903944c-c5b0-41d3-8a50-90e89d2d1ded
-      width: 4
-    type: CHART
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    - ROW-N-ZECCZRMV
-  CHART-BLYLIVYA:
-    children: []
-    id: CHART-BLYLIVYA
+    id: CHART-FH46C3F6
     meta:
       chartId: 77
       height: 50
@@ -70,10 +56,24 @@ position:
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-N-ZECCZRMV
-  CHART-I188VH0O:
+    - ROW-N-60QUU8VT
+  CHART-YHT6GJ90:
     children: []
-    id: CHART-I188VH0O
+    id: CHART-YHT6GJ90
+    meta:
+      chartId: 79
+      height: 50
+      sliceName: Dogs_BigNumber
+      uuid: 5903944c-c5b0-41d3-8a50-90e89d2d1ded
+      width: 4
+    type: CHART
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-60QUU8VT
+  CHART-P8V7PMCQ:
+    children: []
+    id: CHART-P8V7PMCQ
     meta:
       chartId: 78
       height: 50
@@ -84,5 +84,5 @@ position:
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-N-ZECCZRMV
+    - ROW-N-60QUU8VT
 version: 1.0.0
