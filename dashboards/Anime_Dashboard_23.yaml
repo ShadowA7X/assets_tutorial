@@ -1,0 +1,76 @@
+dashboard_title: Anime_Dashboard
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: ae2e1e1c-a2a3-4eba-acba-17786a3cc010
+position:
+  CHART-8vy9BrBCkoX5koKLf_Axr:
+    children: []
+    id: CHART-8vy9BrBCkoX5koKLf_Axr
+    meta:
+      chartId: 95
+      height: 50
+      sliceName: GS_Anime_TableChart
+      uuid: 187650b1-bfd2-4ce2-8a7f-3666b220ca63
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-GrN3o8_VyQam2rVXAimnX
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-GrN3o8_VyQam2rVXAimnX
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Anime_Dashboard
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-GrN3o8_VyQam2rVXAimnX:
+    children:
+    - CHART-8vy9BrBCkoX5koKLf_Axr
+    id: ROW-GrN3o8_VyQam2rVXAimnX
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '95':
+      id: 95
+      crossFilters:
+        scope: global
+        chartsInScope: []
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 95
+  map_label_colors: {}
+  color_scheme: ''
+  refresh_frequency: 0
+  color_scheme_domain: []
+  expanded_slices: {}
+  label_colors: {}
+  shared_label_colors: []
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+version: 1.0.0

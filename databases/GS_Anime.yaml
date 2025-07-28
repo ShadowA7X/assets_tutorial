@@ -1,0 +1,17 @@
+database_name: GS_Anime
+sqlalchemy_uri: gsheets://
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_file_upload: false
+extra:
+  allows_virtual_table_explore: true
+  engine_params:
+    catalog:
+      Anime_list: https://docs.google.com/spreadsheets/d/1JGQcAIA4CDVPww4B37RUSGMKIt0VJHFsr1FaMcUdLGQ/edit?usp=sharing
+impersonate_user: true
+uuid: 19455687-5832-4e24-9aa0-daf758bd7774
+version: 1.0.0

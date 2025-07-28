@@ -20,7 +20,7 @@ position:
     type: ROOT
   GRID_ID:
     children:
-    - ROW-N-WMAJWFMN
+    - ROW-N-VXVX66JD
     id: GRID_ID
     parents:
     - ROOT_ID
@@ -30,12 +30,12 @@ position:
     meta:
       text: Dog_Dash
     type: HEADER
-  ROW-N-WMAJWFMN:
+  ROW-N-VXVX66JD:
     children:
-    - CHART-O8OEZIGD
-    - CHART-CH06UKNS
-    - CHART-FPOLHG1B
-    id: ROW-N-WMAJWFMN
+    - CHART-QH48EZHL
+    - CHART-04FIP4F7
+    - CHART-NRCGT7PU
+    id: ROW-N-VXVX66JD
     meta:
       '0': ROOT_ID
       background: BACKGROUND_TRANSPARENT
@@ -43,37 +43,9 @@ position:
     parents:
     - ROOT_ID
     - GRID_ID
-  CHART-O8OEZIGD:
+  CHART-QH48EZHL:
     children: []
-    id: CHART-O8OEZIGD
-    meta:
-      chartId: 79
-      height: 50
-      sliceName: Dogs_BigNumber
-      uuid: 5903944c-c5b0-41d3-8a50-90e89d2d1ded
-      width: 4
-    type: CHART
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    - ROW-N-WMAJWFMN
-  CHART-CH06UKNS:
-    children: []
-    id: CHART-CH06UKNS
-    meta:
-      chartId: 78
-      height: 50
-      sliceName: Dog_PieChart
-      uuid: 5d301935-467e-40ae-9f15-64b1eede7a15
-      width: 4
-    type: CHART
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    - ROW-N-WMAJWFMN
-  CHART-FPOLHG1B:
-    children: []
-    id: CHART-FPOLHG1B
+    id: CHART-QH48EZHL
     meta:
       chartId: 77
       height: 50
@@ -84,5 +56,33 @@ position:
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-N-WMAJWFMN
+    - ROW-N-VXVX66JD
+  CHART-04FIP4F7:
+    children: []
+    id: CHART-04FIP4F7
+    meta:
+      chartId: 78
+      height: 50
+      sliceName: Dog_PieChart
+      uuid: 5d301935-467e-40ae-9f15-64b1eede7a15
+      width: 4
+    type: CHART
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-VXVX66JD
+  CHART-NRCGT7PU:
+    children: []
+    id: CHART-NRCGT7PU
+    meta:
+      chartId: 79
+      height: 50
+      sliceName: Dogs_BigNumber
+      uuid: 5903944c-c5b0-41d3-8a50-90e89d2d1ded
+      width: 4
+    type: CHART
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-VXVX66JD
 version: 1.0.0
